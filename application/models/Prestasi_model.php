@@ -32,12 +32,6 @@ class Prestasi_model extends CI_Model
                 INNER JOIN tb_jenis_beasiswa ON tb_jenis_beasiswa.id_beasiswa = tb_jenis_beasiswa.id_beasiswa
                WHERE id_prestasi = $id";
         return $this->db->query($query)->row_array();
-
-        // $query = "SELECT * FROM tb_prestasi INNER JOIN tb_thusulan
-        // ON tb_thusulan.id_usulan = tb_prestasi.id_usulan
-        // INNER JOIN tb_mahasiswa ON tb_mahasiswa.nim = tb_prestasi.nim
-        // WHERE id_prestasi = $id";
-        // return $this->db->query($query)->row_array();
     }
 
 
